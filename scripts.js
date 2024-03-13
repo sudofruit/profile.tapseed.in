@@ -9,7 +9,7 @@ document
 
     try {
       const response = await fetch(
-        "https://strapi-deployment-xh5t.onrender.com/api/auth/local",
+        "https://tapseed.cloud/api/auth/local",
         {
           method: "POST",
           headers: {
