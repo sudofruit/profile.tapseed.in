@@ -8,19 +8,16 @@ document
     const password = formData.get("password");
 
     try {
-      const response = await fetch(
-        "https://strapi-deployment-xh5t.onrender.com/api/auth/local",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            identifier: username,
-            password: password,
-          }),
-        }
-      );
+      const response = await fetch("https://tapseed.cloud/api/auth/local", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          identifier: username,
+          password: password,
+        }),
+      });
 
       if (!response.ok) {
         throw new Error("Login failed");
@@ -31,7 +28,7 @@ document
       localStorage.setItem("username", username); // Store the username in local storage
 
       // Redirect to the editing page
-      window.location.href = "editing_page/editing.html";
+      window.location.href = "master-page/master-page.html";
     } catch (error) {
       console.error("Error logging in:", error);
       // Handle error (e.g., show error message to user)

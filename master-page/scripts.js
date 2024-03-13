@@ -3,7 +3,7 @@ const username = localStorage.getItem("username");
 
 // Fetching user image
 axios
-  .get("https://strapi-deployment-xh5t.onrender.com/api/images?populate=*")
+  .get("https://tapseed.cloud/api/images?populate=*")
   .then((response) => {
     const user = response.data.data.find(
       (item) => item.attributes.username === username
@@ -28,7 +28,7 @@ axios
 // Fetching profile data for name and designation
 console.log(username);
 async function fetchName(username) {
-  const url = `https://strapi-deployment-xh5t.onrender.com/api/people?filters[username][$eq]=${username}`;
+  const url = `https://tapseed.cloud/api/people?filters[username][$eq]=${username}`;
 
   try {
     const response = await fetch(url);
@@ -59,7 +59,7 @@ const imageMapping = {
   // Add more mappings as needed
 };
 
-const apiUrl = `https://strapi-deployment-xh5t.onrender.com/api/links?filters[username][$eq]=${username}`;
+const apiUrl = `https://tapseed.cloud/api/links?filters[username][$eq]=${username}`;
 const socialMain = document.querySelector(".socialMain");
 
 fetch(apiUrl)
@@ -144,7 +144,7 @@ function updateLinkStatus(linkId, isChecked) {
   // Retrieve token from local storage
   const token = localStorage.getItem("token");
 
-  const updateUrl = `https://strapi-deployment-xh5t.onrender.com/api/links/${linkId}`;
+  const updateUrl = `https://tapseed.cloud/api/links/${linkId}`;
   const requestBody = {
     data: {
       link_on: isChecked,

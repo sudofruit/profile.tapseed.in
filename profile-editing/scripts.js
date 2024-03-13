@@ -14,7 +14,7 @@ async function fetchImageDataByUsernameAndUpdate(username) {
 
     // Make API request
     const response = await axios.get(
-      "https://strapi-deployment-xh5t.onrender.com/api/images?populate=*"
+      "https://tapseed.cloud/api/images?populate=*"
     );
 
     // Find image data corresponding to the username
@@ -29,11 +29,14 @@ async function fetchImageDataByUsernameAndUpdate(username) {
 
     // Extract medium URLs for profile and cover_photo
     const profileUrl =
-      imageData.attributes.profile?.data?.attributes?.formats?.medium?.url ||
-      null;
+      "https://tapseed.cloud" +
+      (imageData.attributes.profile?.data?.attributes?.formats?.medium?.url ||
+        null);
     const coverPhotoUrl =
-      imageData.attributes.cover_photo?.data?.attributes?.formats?.medium
-        ?.url || null;
+      "https://tapseed.cloud" +
+      (imageData.attributes.cover_photo?.data?.attributes?.formats?.medium
+        ?.url || null);
+
     userIds = imageData.id; // Assign value to userIds
 
     console.log("User Ids:", userIds); // Log userIds
@@ -68,16 +71,13 @@ const uploadImage = async (formId, field) => {
     formData.append("field", field);
 
     try {
-      const response = await fetch(
-        "https://strapi-deployment-xh5t.onrender.com/api/upload",
-        {
-          method: "POST",
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-          body: formData,
-        }
-      );
+      const response = await fetch("https://tapseed.cloud/api/upload", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+        body: formData,
+      });
 
       if (response.ok) {
         console.log("File(s) uploaded successfully");
@@ -102,7 +102,7 @@ uploadImage("uploadCover", "cover_photo");
 
 // Function to fetch user data
 async function fetchAndUpdateUserData() {
-  const apiUrl = "https://strapi-deployment-xh5t.onrender.com/api/people";
+  const apiUrl = "https://tapseed.cloud/api/people";
   const storedUsername = localStorage.getItem("username");
 
   try {
@@ -143,7 +143,7 @@ fetchAndUpdateUserData();
 document
   .getElementById("save-button")
   .addEventListener("click", async function () {
-    const apiUrl = "https://strapi-deployment-xh5t.onrender.com/api/people";
+    const apiUrl = "https://tapseed.cloud/api/people";
     let jwtToken = localStorage.getItem("token");
 
     try {
