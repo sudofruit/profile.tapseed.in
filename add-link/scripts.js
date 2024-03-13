@@ -6,20 +6,104 @@ document.addEventListener("DOMContentLoaded", function () {
   const socialAppValues = {
     whatsapp: {
       input: "whatsapp number",
-      imagePath: "/add-link/images/whatsapp.png",
+      imagePath: "https://tapseed.cloud/uploads/whatsapp_icon_2c1255c072.png",
     },
     website: {
       input: "link",
-      imagePath: "/add-link/images/website.png",
+      imagePath: "https://tapseed.cloud/uploads/browser_icon_aadc966123.png",
     },
-    iphone: {
+    phone: {
       input: "phone number",
-      imagePath: "/add-link/images/phone.png",
+      imagePath: "https://tapseed.cloud/uploads/phone_icon_275497ff7c.png",
     },
     facebook: {
       input: "profile name",
-      imagePath: "/add-link/images/facebook.png",
+      imagePath: "https://tapseed.cloud/uploads/facebook_icon_6b6420ab3b.png",
     },
+
+    instagram: {
+      input: "profile name",
+      imagePath: "https://tapseed.cloud/uploads/instagram_icon_b9e86a2bd2.png",
+    },
+    linkedin: {
+      input: "link",
+      imagePath: "https://tapseed.cloud/uploads/linkedin_deab9b8ad4.png",
+    },
+    email: {
+      input: "email id",
+      imagePath: "https://tapseed.cloud/uploads/email_icon_d6d4621dbb.png",
+    },
+    message: {
+      input: "phone number",
+      imagePath: "https://tapseed.cloud/uploads/messages_icon_1901bda864.png",
+    },
+
+    x: {
+      input: "profile",
+      imagePath: "https://tapseed.cloud/uploads/twitter_0b0fd46945.png",
+    },
+    snapchat: {
+      input: "profile",
+      imagePath: "https://tapseed.cloud/uploads/snapchat_819240ca30.png",
+    },
+    youtube: {
+      input: "channel name",
+      imagePath: "https://tapseed.cloud/uploads/youtube_ec54ba8a39.png",
+    },
+    "make my trip": {
+      input: "link",
+      imagePath: "https://tapseed.cloud/uploads/make_my_trip_88836c0b68.png",
+    },
+
+    "google business": {
+      input: "review link",
+      imagePath: "https://tapseed.cloud/uploads/gmb_icon_4bbf255130.png",
+    },
+    bookmyshow: {
+      input: "link",
+      imagePath: "https://tapseed.cloud/uploads/bookmyshow_a1353e1416.png",
+    },
+    spotify: {
+      input: "link",
+      imagePath: "https://tapseed.cloud/uploads/spotify_icon_69ddbf03b3.png",
+    },
+    Soundcloud: {
+      input: "link",
+      imagePath: "https://tapseed.cloud/uploads/soundcloud_8760926e60.png",
+    },
+
+    skype: {
+      input: "link",
+      imagePath: "https://tapseed.cloud/uploads/skype_d7fa5741bf.png",
+    },
+    line: {
+      input: "link",
+      imagePath: "https://tapseed.cloud/uploads/line_10211a5995.png",
+    },
+
+    facetime: {
+      input: "link",
+      imagePath: "https://tapseed.cloud/uploads/gmb_icon_4bbf255130.png",
+    },
+    tiktok: {
+      input: "link",
+      imagePath: "https://tapseed.cloud/uploads/tiktok_f7557eb220.png",
+    },
+    threads: {
+      input: "profile",
+      imagePath: "https://tapseed.cloud/uploads/threads_9dbf12e3ae.png",
+    },
+    likee: {
+      input: "link",
+      imagePath: "https://tapseed.cloud/uploads/likee_cff7699c95.png",
+    },
+
+    tripadvisor: {
+      input: "link",
+      imagePath:
+        "https://tapseed.cloud/uploads/tripadvisor_icon_e9e9ed8ea5.png",
+    },
+
     // Add more mappings as needed
   };
 
@@ -110,12 +194,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Make the Axios POST request with the token in the headers
     axios
-      .post("https://strapi-deployment-xh5t.onrender.com/api/links", postData, {
+      .post("https://tapseed.cloud/api/links", postData, {
         headers: headers,
       })
       .then(function (response) {
         console.log("POST request successful:", response.data);
         // Handle success, if needed
+        // Close the modal
+        var closeButton = document.querySelector(
+          "#exampleModal #modalCloseButton"
+        );
+
+        if (closeButton) {
+          closeButton.click();
+        }
       })
       .catch(function (error) {
         console.error("Error making POST request:", error);
