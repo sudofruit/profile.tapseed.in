@@ -79,24 +79,29 @@ document.getElementById("addButton").addEventListener("click", function () {
   // Retrieve data from the DOM
   var username = "abhin";
   var linkTextValue = document.getElementById("linkText").value;
-  var linkValue = document.getElementById("link").textContent;
+  var linkValue = document.getElementById("link_value").value;
 
   var link_on = true;
   var link_name = h5Text; // Use h5Text as link_name
 
-  console.log(link);
-  console.log(link_name);
+  console.log("username:" + username);
+  console.log("link_text : " + linkTextValue);
+  console.log("link : " + linkValue);
+  console.log("link_on : " + link_on);
+  console.log("link_name : " + link_name);
 
   // Construct the data object
   var postData = {
     data: {
       username: username,
-      Link: linkValue,
+      link: linkValue,
       link_text: linkTextValue,
       link_on: link_on,
       link_name: link_name,
     },
   };
+
+  console.log(postData);
 
   // Define your token
   var token =

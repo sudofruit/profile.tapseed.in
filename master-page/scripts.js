@@ -53,8 +53,8 @@ fetchName(username); // Call fetchName function
 
 // Define a mapping of link names to image URLs
 const imageMapping = {
-  facebook: "facebook_image_url.jpg",
-  instagram: "instagram_image_url.jpg",
+  facebook: "https://tapseed.cloud/uploads/facebook_4d757a5466.png",
+  instagram: "https://tapseed.cloud/uploads/instagram_1e34be6a87.png",
   linkedin: "linkedin_image_url.jpg",
   // Add more mappings as needed
 };
