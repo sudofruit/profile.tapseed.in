@@ -45,7 +45,7 @@
             <img
               class="socialimages"
               alt="phone"
-              src="/add-link/images/phone.png"
+              src="https://tapseed.cloud/uploads/phone_icon_275497ff7c.png"
             />
             <div>
               <h5 class="detailtext">IPhone</h5>
@@ -69,7 +69,7 @@
             <img
               class="socialimages" id="socialimages"
               alt="phone"
-              src="/add-link/images/website.png"
+              src="https://tapseed.cloud/uploads/browser_icon_aadc966123.png"
             />
             <div>
               <h5 class="detailtext">Website</h5>
@@ -92,7 +92,7 @@
             <img
               class="socialimages"
               alt="phone"
-              src="/add-link/images/phone.png"
+              src="https://tapseed.cloud/uploads/whatsapp_icon_2c1255c072.png"
             />
             <div>
               <h5 class="detailtext">WhatsApp</h5>
@@ -116,7 +116,7 @@
             <img
               class="socialimages"
               alt="phone"
-              src="/add-link/images/instagram.png"
+              src="https://tapseed.cloud/uploads/instagram_icon_b9e86a2bd2.png"
             />
             <div>
               <h5 class="detailtext">Instagram</h5>
@@ -140,7 +140,7 @@
             <img
               class="socialimages"
               alt="phone"
-              src="/add-link/images/linkedin.png"
+              src="https://tapseed.cloud/uploads/linkedin_deab9b8ad4.png"
             />
             <div>
               <h5 class="detailtext">Linkedin</h5>
@@ -156,21 +156,26 @@
             Add
           </button>
         </div>
+
         <h5 class="headingtext">Contact Info</h5>
+
+        <!-- Link_name: Email-->
+
         <div class="contactinfo">
           <div class="contactinfoinner">
-            <div class="socialview">
+            <div class="socialview" data-icon="email">
               <div class="socialviewinner">
                 <img
                   class="socialimages"
                   alt="phone"
-                  src="https://store-images.s-microsoft.com/image/apps.8453.13655054093851568.4a371b72-2ce8-4bdb-9d83-be49894d3fa0.7f3687b9-847d-4f86-bb5c-c73259e2b38e"
+                  src="https://tapseed.cloud/uploads/email_icon_d6d4621dbb.png"
                 />
                 <div>
-                  <h5 class="detailtext">WhatsApp</h5>
+                  <h5 class="detailtext">Email</h5>
                 </div>
               </div>
-              <button
+              <button  
+                id="email"
                 class="btn btnadd"
                 data-bs-toggle="modal"
                 data-bs-target="#exampleModal"
@@ -178,18 +183,22 @@
                 Add
               </button>
             </div>
-            <div class="socialview">
+
+            <!-- Link_name: Message-->
+
+            <div class="socialview" data-icon="message">
               <div class="socialviewinner">
                 <img
                   class="socialimages"
                   alt="phone"
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png"
+                  src="https://tapseed.cloud/uploads/messages_icon_1901bda864.png"
                 />
                 <div>
-                  <h5 class="detailtext">Instagram</h5>
+                  <h5 class="detailtext">Message</h5>
                 </div>
               </div>
               <button
+                id="message"
                 class="btn btnadd"
                 data-bs-toggle="modal"
                 data-bs-target="#exampleModal"
@@ -197,18 +206,18 @@
                 Add
               </button>
             </div>
-            <div class="socialview">
+            <div class="socialview" data-icon="phone">
               <div class="socialviewinner">
                 <img
                   class="socialimages"
                   alt="phone"
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAllBMVEUMZMX///8AYcQAWcFDf8nL3PIAWrzQ3vMAYcI0eclZjtAucslAgsz6/v3x9/sgbclOhM8AX8QAYsAAX70AV70AWMLm7vgAXb4sdsw5fsoRbsVmltK6z+iUt+AMZcGDrN3c6fNvnddiltWqwuPA0+r0+vyOrt+lweR9pduuyueUst9Lh81pldd1mtYdbcunxOXO4u7Z4fGRyVlRAAAEKUlEQVR4nO3ce1faMBzG8SblEpSCiUUuQrkMhsCc+v7f3Ko4KjW/yLY0WXOez9mf4Ml3vSW1NYoAAAAAAAAAAAAAAAAAAAAAAAAAAADgYiriIsqU72FURcapGnXHk5aMue+xVCCT6n56x960Z2OpMt8jsozz+Xve0Xqc+h6SXbKzYOeSfex7UBap+J591lThHI3awPxw5KGcVFUj0RayaRrI6UaUj8GTpfA9NivknApkvTC2YdwjC9lc+h6dBWpFB7JFCIXx1FDIRr6HZ0Fq2EkZewjgXNMnLhVH34a+x/fPeMdYOK3/gchvTIFsXf/ZKR+bC+u/DcW1cS/d1f84jFobU+H3ANYXadNU2PU9PAvkd0Ngz/forMgMhU/1P5Xm4h0ZmHQCOAzz68WEPNdsg9iE+ZH4QATeBTApPYqf9PvoKIh99E2qOxQ3jVvf47JHDT5fMl5GAQW+3tNvnF/4N3shwrhJc8Ljw/Q0Q13MJ4GcRc8IORjP99vZfpWlQe2gH3EZx7Gs/4IJAADqQ3DJX/+FM38vqHyKlA5Hhx+Pj49X43468P34CheEiz9Z+pTMlrvFaQ6YbNrblRpKf6vNbHRNKX2yT/kwSVd5XluzGGs//Ew9NfIGS/RYs3X2yUGzp7dpnMYu+zPql1mbp46f+XxeSCkVxrpt8+bmWJgJOTPeYP7m5QkWi4Wye0d94t3m3sNmtFao5OyLvle7zPnRaKlQCb6+IDBfXvddJ1oq5BH5WE7JXd/xwWilUKnJpYGM9a7dPk5mpfCWP18cmO+okdOtaKVwYHxm5ZP1wOWNPBuFneUfBTK2dHkzyEbhwfirco3NxOF+aqPw8rPMbzuHV34bhX+h4e6q6KnQ4ZM6ngrZyNlG9FXo7hfMvgp7zt7o8FXIDq52U2+FznbTKgovmgAsalq4mB0mQqjJYfvler98o6sWhevuYPh2C5jz4WD1ReMPR4soi4W91dmtXy7MK469o7mpvcLn8nRaSWPi9PzH/++FCXvW3LuXpoXxi6MllK1tqHtGLBMd0zccLYNtFR60W8T0wkqv7yTQVuGTfpfLuvRXkms3sxo7hQlx/yy7NayOO3Uq3MXExY148PFY6OZyYafwihqsXNJfGteoMCGXQoYfzxo1KmxSO2kkJvTLcXUq3BreraFnp3UqNLwT3aJPpnUqPNBjTV+CKDScFVv0t+pUaLiytegXq1BoCQoLKNRDYfVQWEChHgqrh8ICCvVQWD0UFlCoh8LqobCAQj0UVg+FBRTqobB6KCygUA+F1UNhAYV6KKweCgso1ENh9VBYQKEeCquHwkKAhe1SIf2UoaFwSP+/dB29FtTvUsbnH+Q3VxTDmxOq+zffskqJiOtFpZda+OV/M6uQKepLof0NWAAAAAAAAAAAAAAAAAAAAAAAAAAAgAr8Aj5RWY0PDbn2AAAAAElFTkSuQmCC"
+                  src="https://tapseed.cloud/uploads/phone_icon_275497ff7c.png"
                 />
                 <div>
-                  <h5 class="detailtext">Linkedin</h5>
+                  <h5 class="detailtext">Phone</h5>
                 </div>
               </div>
-              <button
+              <button id="phone"
                 class="btn btnadd"
                 data-bs-toggle="modal"
                 data-bs-target="#exampleModal"
@@ -218,18 +227,18 @@
             </div>
           </div>
           <div class="contactinfoinner">
-            <div class="socialview">
+            <div class="socialview" data-icon="skype">
               <div class="socialviewinner">
                 <img
                   class="socialimages"
                   alt="phone"
-                  src="https://store-images.s-microsoft.com/image/apps.8453.13655054093851568.4a371b72-2ce8-4bdb-9d83-be49894d3fa0.7f3687b9-847d-4f86-bb5c-c73259e2b38e"
+                  src="https://tapseed.cloud/uploads/skype_d7fa5741bf.png"
                 />
                 <div>
-                  <h5 class="detailtext">WhatsApp</h5>
+                  <h5 class="detailtext">Skype</h5>
                 </div>
               </div>
-              <button
+              <button id="skype"
                 class="btn btnadd"
                 data-bs-toggle="modal"
                 data-bs-target="#exampleModal"
@@ -237,18 +246,18 @@
                 Add
               </button>
             </div>
-            <div class="socialview">
+            <div class="socialview" data-icon="line">
               <div class="socialviewinner">
                 <img
                   class="socialimages"
                   alt="phone"
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png"
+                  src="https://tapseed.cloud/uploads/line_10211a5995.png"
                 />
                 <div>
-                  <h5 class="detailtext">Instagram</h5>
+                  <h5 class="detailtext">Line</h5>
                 </div>
               </div>
-              <button
+              <button id="line"
                 class="btn btnadd"
                 data-bs-toggle="modal"
                 data-bs-target="#exampleModal"
@@ -256,7 +265,7 @@
                 Add
               </button>
             </div>
-            <div class="socialview">
+            <div class="socialview" data-icon="facetime">
               <div class="socialviewinner">
                 <img
                   class="socialimages"
@@ -264,10 +273,10 @@
                   src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAllBMVEUMZMX///8AYcQAWcFDf8nL3PIAWrzQ3vMAYcI0eclZjtAucslAgsz6/v3x9/sgbclOhM8AX8QAYsAAX70AV70AWMLm7vgAXb4sdsw5fsoRbsVmltK6z+iUt+AMZcGDrN3c6fNvnddiltWqwuPA0+r0+vyOrt+lweR9pduuyueUst9Lh81pldd1mtYdbcunxOXO4u7Z4fGRyVlRAAAEKUlEQVR4nO3ce1faMBzG8SblEpSCiUUuQrkMhsCc+v7f3Ko4KjW/yLY0WXOez9mf4Ml3vSW1NYoAAAAAAAAAAAAAAAAAAAAAAAAAAADgYiriIsqU72FURcapGnXHk5aMue+xVCCT6n56x960Z2OpMt8jsozz+Xve0Xqc+h6SXbKzYOeSfex7UBap+J591lThHI3awPxw5KGcVFUj0RayaRrI6UaUj8GTpfA9NivknApkvTC2YdwjC9lc+h6dBWpFB7JFCIXx1FDIRr6HZ0Fq2EkZewjgXNMnLhVH34a+x/fPeMdYOK3/gchvTIFsXf/ZKR+bC+u/DcW1cS/d1f84jFobU+H3ANYXadNU2PU9PAvkd0Ngz/forMgMhU/1P5Xm4h0ZmHQCOAzz68WEPNdsg9iE+ZH4QATeBTApPYqf9PvoKIh99E2qOxQ3jVvf47JHDT5fMl5GAQW+3tNvnF/4N3shwrhJc8Ljw/Q0Q13MJ4GcRc8IORjP99vZfpWlQe2gH3EZx7Gs/4IJAADqQ3DJX/+FM38vqHyKlA5Hhx+Pj49X43468P34CheEiz9Z+pTMlrvFaQ6YbNrblRpKf6vNbHRNKX2yT/kwSVd5XluzGGs//Ew9NfIGS/RYs3X2yUGzp7dpnMYu+zPql1mbp46f+XxeSCkVxrpt8+bmWJgJOTPeYP7m5QkWi4Wye0d94t3m3sNmtFao5OyLvle7zPnRaKlQCb6+IDBfXvddJ1oq5BH5WE7JXd/xwWilUKnJpYGM9a7dPk5mpfCWP18cmO+okdOtaKVwYHxm5ZP1wOWNPBuFneUfBTK2dHkzyEbhwfirco3NxOF+aqPw8rPMbzuHV34bhX+h4e6q6KnQ4ZM6ngrZyNlG9FXo7hfMvgp7zt7o8FXIDq52U2+FznbTKgovmgAsalq4mB0mQqjJYfvler98o6sWhevuYPh2C5jz4WD1ReMPR4soi4W91dmtXy7MK469o7mpvcLn8nRaSWPi9PzH/++FCXvW3LuXpoXxi6MllK1tqHtGLBMd0zccLYNtFR60W8T0wkqv7yTQVuGTfpfLuvRXkms3sxo7hQlx/yy7NayOO3Uq3MXExY148PFY6OZyYafwihqsXNJfGteoMCGXQoYfzxo1KmxSO2kkJvTLcXUq3BreraFnp3UqNLwT3aJPpnUqPNBjTV+CKDScFVv0t+pUaLiytegXq1BoCQoLKNRDYfVQWEChHgqrh8ICCvVQWD0UFlCoh8LqobCAQj0UVg+FBRTqobB6KCygUA+F1UNhAYV6KKweCgso1ENh9VBYQKEeCquHwkKAhe1SIf2UoaFwSP+/dB29FtTvUsbnH+Q3VxTDmxOq+zffskqJiOtFpZda+OV/M6uQKepLof0NWAAAAAAAAAAAAAAAAAAAAAAAAAAAgAr8Aj5RWY0PDbn2AAAAAElFTkSuQmCC"
                 />
                 <div>
-                  <h5 class="detailtext">Linkedin</h5>
+                  <h5 class="detailtext">Facetime</h5>
                 </div>
               </div>
-              <button
+              <button id="facetime"
                 class="btn btnadd"
                 data-bs-toggle="modal"
                 data-bs-target="#exampleModal"
@@ -277,40 +286,22 @@
             </div>
           </div>
         </div>
-        <h5 class="headingtext">Social Info</h5>
+        <!-- Social Media-->
+        <h5 class="headingtext">Social Media</h5>
         <div class="contactinfo">
           <div class="contactinfoinner">
-            <div class="socialview">
+            <div class="socialview" data-icon="instagram">
               <div class="socialviewinner">
                 <img
                   class="socialimages"
                   alt="phone"
-                  src="https://store-images.s-microsoft.com/image/apps.8453.13655054093851568.4a371b72-2ce8-4bdb-9d83-be49894d3fa0.7f3687b9-847d-4f86-bb5c-c73259e2b38e"
-                />
-                <div>
-                  <h5 class="detailtext">WhatsApp</h5>
-                </div>
-              </div>
-              <button
-                class="btn btnadd"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                Add
-              </button>
-            </div>
-            <div class="socialview">
-              <div class="socialviewinner">
-                <img
-                  class="socialimages"
-                  alt="phone"
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png"
+                  src="https://tapseed.cloud/uploads/instagram_icon_b9e86a2bd2.png"
                 />
                 <div>
                   <h5 class="detailtext">Instagram</h5>
                 </div>
               </div>
-              <button
+              <button id="instagram"
                 class="btn btnadd"
                 data-bs-toggle="modal"
                 data-bs-target="#exampleModal"
@@ -318,18 +309,37 @@
                 Add
               </button>
             </div>
-            <div class="socialview">
+            <div class="socialview" data-icon="facebook">
               <div class="socialviewinner">
                 <img
                   class="socialimages"
                   alt="phone"
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAllBMVEUMZMX///8AYcQAWcFDf8nL3PIAWrzQ3vMAYcI0eclZjtAucslAgsz6/v3x9/sgbclOhM8AX8QAYsAAX70AV70AWMLm7vgAXb4sdsw5fsoRbsVmltK6z+iUt+AMZcGDrN3c6fNvnddiltWqwuPA0+r0+vyOrt+lweR9pduuyueUst9Lh81pldd1mtYdbcunxOXO4u7Z4fGRyVlRAAAEKUlEQVR4nO3ce1faMBzG8SblEpSCiUUuQrkMhsCc+v7f3Ko4KjW/yLY0WXOez9mf4Ml3vSW1NYoAAAAAAAAAAAAAAAAAAAAAAAAAAADgYiriIsqU72FURcapGnXHk5aMue+xVCCT6n56x960Z2OpMt8jsozz+Xve0Xqc+h6SXbKzYOeSfex7UBap+J591lThHI3awPxw5KGcVFUj0RayaRrI6UaUj8GTpfA9NivknApkvTC2YdwjC9lc+h6dBWpFB7JFCIXx1FDIRr6HZ0Fq2EkZewjgXNMnLhVH34a+x/fPeMdYOK3/gchvTIFsXf/ZKR+bC+u/DcW1cS/d1f84jFobU+H3ANYXadNU2PU9PAvkd0Ngz/forMgMhU/1P5Xm4h0ZmHQCOAzz68WEPNdsg9iE+ZH4QATeBTApPYqf9PvoKIh99E2qOxQ3jVvf47JHDT5fMl5GAQW+3tNvnF/4N3shwrhJc8Ljw/Q0Q13MJ4GcRc8IORjP99vZfpWlQe2gH3EZx7Gs/4IJAADqQ3DJX/+FM38vqHyKlA5Hhx+Pj49X43468P34CheEiz9Z+pTMlrvFaQ6YbNrblRpKf6vNbHRNKX2yT/kwSVd5XluzGGs//Ew9NfIGS/RYs3X2yUGzp7dpnMYu+zPql1mbp46f+XxeSCkVxrpt8+bmWJgJOTPeYP7m5QkWi4Wye0d94t3m3sNmtFao5OyLvle7zPnRaKlQCb6+IDBfXvddJ1oq5BH5WE7JXd/xwWilUKnJpYGM9a7dPk5mpfCWP18cmO+okdOtaKVwYHxm5ZP1wOWNPBuFneUfBTK2dHkzyEbhwfirco3NxOF+aqPw8rPMbzuHV34bhX+h4e6q6KnQ4ZM6ngrZyNlG9FXo7hfMvgp7zt7o8FXIDq52U2+FznbTKgovmgAsalq4mB0mQqjJYfvler98o6sWhevuYPh2C5jz4WD1ReMPR4soi4W91dmtXy7MK469o7mpvcLn8nRaSWPi9PzH/++FCXvW3LuXpoXxi6MllK1tqHtGLBMd0zccLYNtFR60W8T0wkqv7yTQVuGTfpfLuvRXkms3sxo7hQlx/yy7NayOO3Uq3MXExY148PFY6OZyYafwihqsXNJfGteoMCGXQoYfzxo1KmxSO2kkJvTLcXUq3BreraFnp3UqNLwT3aJPpnUqPNBjTV+CKDScFVv0t+pUaLiytegXq1BoCQoLKNRDYfVQWEChHgqrh8ICCvVQWD0UFlCoh8LqobCAQj0UVg+FBRTqobB6KCygUA+F1UNhAYV6KKweCgso1ENh9VBYQKEeCquHwkKAhe1SIf2UoaFwSP+/dB29FtTvUsbnH+Q3VxTDmxOq+zffskqJiOtFpZda+OV/M6uQKepLof0NWAAAAAAAAAAAAAAAAAAAAAAAAAAAgAr8Aj5RWY0PDbn2AAAAAElFTkSuQmCC"
+                  src="https://tapseed.cloud/uploads/facebook_icon_6b6420ab3b.png"
+                />
+                <div>
+                  <h5 class="detailtext">Facebook</h5>
+                </div>
+              </div>
+              <button id="facebook"
+                class="btn btnadd"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Add
+              </button>
+            </div>
+            <div class="socialview" data-icon="linkedin">
+              <div class="socialviewinner">
+                <img
+                  class="socialimages"
+                  alt="phone"
+                  src="https://tapseed.cloud/uploads/linkedin_deab9b8ad4.png"
                 />
                 <div>
                   <h5 class="detailtext">Linkedin</h5>
                 </div>
               </div>
-              <button
+              <button id="linkedin"
                 class="btn btnadd"
                 data-bs-toggle="modal"
                 data-bs-target="#exampleModal"
@@ -339,18 +349,18 @@
             </div>
           </div>
           <div class="contactinfoinner">
-            <div class="socialview">
+            <div class="socialview" data-icon="x">
               <div class="socialviewinner">
                 <img
                   class="socialimages"
                   alt="phone"
-                  src="https://store-images.s-microsoft.com/image/apps.8453.13655054093851568.4a371b72-2ce8-4bdb-9d83-be49894d3fa0.7f3687b9-847d-4f86-bb5c-c73259e2b38e"
+                  src="https://tapseed.cloud/uploads/twitter_0b0fd46945.png"
                 />
                 <div>
-                  <h5 class="detailtext">WhatsApp</h5>
+                  <h5 class="detailtext">X</h5>
                 </div>
               </div>
-              <button
+              <button id="x"
                 class="btn btnadd"
                 data-bs-toggle="modal"
                 data-bs-target="#exampleModal"
@@ -358,18 +368,18 @@
                 Add
               </button>
             </div>
-            <div class="socialview">
+            <div class="socialview" data-icon="snapchat">
               <div class="socialviewinner">
                 <img
                   class="socialimages"
                   alt="phone"
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png"
+                  src="https://tapseed.cloud/uploads/snapchat_819240ca30.png"
                 />
                 <div>
-                  <h5 class="detailtext">Instagram</h5>
+                  <h5 class="detailtext">Snapchat</h5>
                 </div>
               </div>
-              <button
+              <button id="snapchat"
                 class="btn btnadd"
                 data-bs-toggle="modal"
                 data-bs-target="#exampleModal"
@@ -377,18 +387,77 @@
                 Add
               </button>
             </div>
-            <div class="socialview">
+            <div class="socialview" data-icon="youtube">
               <div class="socialviewinner">
                 <img
                   class="socialimages"
                   alt="phone"
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAllBMVEUMZMX///8AYcQAWcFDf8nL3PIAWrzQ3vMAYcI0eclZjtAucslAgsz6/v3x9/sgbclOhM8AX8QAYsAAX70AV70AWMLm7vgAXb4sdsw5fsoRbsVmltK6z+iUt+AMZcGDrN3c6fNvnddiltWqwuPA0+r0+vyOrt+lweR9pduuyueUst9Lh81pldd1mtYdbcunxOXO4u7Z4fGRyVlRAAAEKUlEQVR4nO3ce1faMBzG8SblEpSCiUUuQrkMhsCc+v7f3Ko4KjW/yLY0WXOez9mf4Ml3vSW1NYoAAAAAAAAAAAAAAAAAAAAAAAAAAADgYiriIsqU72FURcapGnXHk5aMue+xVCCT6n56x960Z2OpMt8jsozz+Xve0Xqc+h6SXbKzYOeSfex7UBap+J591lThHI3awPxw5KGcVFUj0RayaRrI6UaUj8GTpfA9NivknApkvTC2YdwjC9lc+h6dBWpFB7JFCIXx1FDIRr6HZ0Fq2EkZewjgXNMnLhVH34a+x/fPeMdYOK3/gchvTIFsXf/ZKR+bC+u/DcW1cS/d1f84jFobU+H3ANYXadNU2PU9PAvkd0Ngz/forMgMhU/1P5Xm4h0ZmHQCOAzz68WEPNdsg9iE+ZH4QATeBTApPYqf9PvoKIh99E2qOxQ3jVvf47JHDT5fMl5GAQW+3tNvnF/4N3shwrhJc8Ljw/Q0Q13MJ4GcRc8IORjP99vZfpWlQe2gH3EZx7Gs/4IJAADqQ3DJX/+FM38vqHyKlA5Hhx+Pj49X43468P34CheEiz9Z+pTMlrvFaQ6YbNrblRpKf6vNbHRNKX2yT/kwSVd5XluzGGs//Ew9NfIGS/RYs3X2yUGzp7dpnMYu+zPql1mbp46f+XxeSCkVxrpt8+bmWJgJOTPeYP7m5QkWi4Wye0d94t3m3sNmtFao5OyLvle7zPnRaKlQCb6+IDBfXvddJ1oq5BH5WE7JXd/xwWilUKnJpYGM9a7dPk5mpfCWP18cmO+okdOtaKVwYHxm5ZP1wOWNPBuFneUfBTK2dHkzyEbhwfirco3NxOF+aqPw8rPMbzuHV34bhX+h4e6q6KnQ4ZM6ngrZyNlG9FXo7hfMvgp7zt7o8FXIDq52U2+FznbTKgovmgAsalq4mB0mQqjJYfvler98o6sWhevuYPh2C5jz4WD1ReMPR4soi4W91dmtXy7MK469o7mpvcLn8nRaSWPi9PzH/++FCXvW3LuXpoXxi6MllK1tqHtGLBMd0zccLYNtFR60W8T0wkqv7yTQVuGTfpfLuvRXkms3sxo7hQlx/yy7NayOO3Uq3MXExY148PFY6OZyYafwihqsXNJfGteoMCGXQoYfzxo1KmxSO2kkJvTLcXUq3BreraFnp3UqNLwT3aJPpnUqPNBjTV+CKDScFVv0t+pUaLiytegXq1BoCQoLKNRDYfVQWEChHgqrh8ICCvVQWD0UFlCoh8LqobCAQj0UVg+FBRTqobB6KCygUA+F1UNhAYV6KKweCgso1ENh9VBYQKEeCquHwkKAhe1SIf2UoaFwSP+/dB29FtTvUsbnH+Q3VxTDmxOq+zffskqJiOtFpZda+OV/M6uQKepLof0NWAAAAAAAAAAAAAAAAAAAAAAAAAAAgAr8Aj5RWY0PDbn2AAAAAElFTkSuQmCC"
+                  src="https://tapseed.cloud/uploads/youtube_ec54ba8a39.png"
                 />
                 <div>
-                  <h5 class="detailtext">Linkedin</h5>
+                  <h5 class="detailtext">Youtube</h5>
                 </div>
               </div>
-              <button
+              <button id="youtube"
+                class="btn btnadd"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Add
+              </button>
+            </div>
+          </div>
+          <div class="contactinfoinner">
+            <div class="socialview" data-icon="tiktok_f7557eb220">
+              <div class="socialviewinner">
+                <img
+                  class="socialimages"
+                  alt="phone"
+                  src="https://tapseed.cloud/uploads/tiktok_f7557eb220.png"
+                />
+                <div>
+                  <h5 class="detailtext">Tiktok</h5>
+                </div>
+              </div>
+              <button id="tiktok"
+                class="btn btnadd"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Add
+              </button>
+            </div>
+            <div class="socialview" data-icon="threads">
+              <div class="socialviewinner">
+                <img
+                  class="socialimages"
+                  alt="phone"
+                  src="https://tapseed.cloud/uploads/threads_9dbf12e3ae.png"
+                />
+                <div>
+                  <h5 class="detailtext">Threads</h5>
+                </div>
+              </div>
+              <button id="threads"
+                class="btn btnadd"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Add
+              </button>
+            </div>
+            <div class="socialview" data-icon="likee">
+              <div class="socialviewinner">
+                <img
+                  class="socialimages"
+                  alt="phone"
+                  src="https://tapseed.cloud/uploads/likee_cff7699c95.png"
+                />
+                <div>
+                  <h5 class="detailtext">Likee</h5>
+                </div>
+              </div>
+              <button id="likee"
                 class="btn btnadd"
                 data-bs-toggle="modal"
                 data-bs-target="#exampleModal"
@@ -399,6 +468,130 @@
           </div>
         </div>
       </div>
+      <!-- Review -->
+      <h5 class="headingtext">Review</h5>
+      <div class="contactinfo">
+        <div class="contactinfoinner">
+          <div class="socialview" data-icon="instagram">
+            <div class="socialviewinner">
+              <img
+                class="socialimages"
+                alt="phone"
+                src="https://tapseed.cloud/uploads/instagram_icon_b9e86a2bd2.png"
+              />
+              <div>
+                <h5 class="detailtext">Instagram</h5>
+              </div>
+            </div>
+            <button id="instagram"
+              class="btn btnadd"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Add
+            </button>
+          </div>
+          <div class="socialview" data-icon="facebook">
+            <div class="socialviewinner">
+              <img
+                class="socialimages"
+                alt="phone"
+                src="https://tapseed.cloud/uploads/facebook_icon_6b6420ab3b.png"
+              />
+              <div>
+                <h5 class="detailtext">Facebook</h5>
+              </div>
+            </div>
+            <button id="facebook"
+              class="btn btnadd"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Add
+            </button>
+          </div>
+          <div class="socialview" data-icon="linkedin">
+            <div class="socialviewinner">
+              <img
+                class="socialimages"
+                alt="phone"
+                src="https://tapseed.cloud/uploads/linkedin_deab9b8ad4.png"
+              />
+              <div>
+                <h5 class="detailtext">Linkedin</h5>
+              </div>
+            </div>
+            <button id="linkedin"
+              class="btn btnadd"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Add
+            </button>
+          </div>
+        </div>
+        
+        <div class="contactinfoinner">
+          <div class="socialview" data-icon="tiktok_f7557eb220">
+            <div class="socialviewinner">
+              <img
+                class="socialimages"
+                alt="phone"
+                src="https://tapseed.cloud/uploads/tiktok_f7557eb220.png"
+              />
+              <div>
+                <h5 class="detailtext">Tiktok</h5>
+              </div>
+            </div>
+            <button id="tiktok"
+              class="btn btnadd"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Add
+            </button>
+          </div>
+          <div class="socialview" data-icon="threads">
+            <div class="socialviewinner">
+              <img
+                class="socialimages"
+                alt="phone"
+                src="https://tapseed.cloud/uploads/threads_9dbf12e3ae.png"
+              />
+              <div>
+                <h5 class="detailtext">Threads</h5>
+              </div>
+            </div>
+            <button id="threads"
+              class="btn btnadd"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Add
+            </button>
+          </div>
+          <div class="socialview" data-icon="likee">
+            <div class="socialviewinner">
+              <img
+                class="socialimages"
+                alt="phone"
+                src="https://tapseed.cloud/uploads/likee_cff7699c95.png"
+              />
+              <div>
+                <h5 class="detailtext">Likee</h5>
+              </div>
+            </div>
+            <button id="likee"
+              class="btn btnadd"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Add
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
       <div
         class="modal fade"
         id="exampleModal"
