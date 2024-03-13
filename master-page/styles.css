@@ -114,6 +114,6 @@ body {
   margin: 3px;
 }
 
-
-
-
+#originalDiv {
+  display: none !important;
+}
