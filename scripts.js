@@ -31,7 +31,7 @@ document
       localStorage.setItem("username", username); // Store the username in local storage
 
       // Redirect to the editing page
-      window.location.href = "editing_page/editing.html";
+      window.location.href = "master-page/master-page.html";
     } catch (error) {
       console.error("Error logging in:", error);
       // Handle error (e.g., show error message to user)
