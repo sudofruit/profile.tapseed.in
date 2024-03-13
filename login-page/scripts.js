@@ -8,19 +8,16 @@ document
     const password = formData.get("password");
 
     try {
-      const response = await fetch(
-        "https://strapi-deployment-xh5t.onrender.com/api/auth/local",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            identifier: username,
-            password: password,
-          }),
-        }
-      );
+      const response = await fetch("tapseed.cloud/api/auth/local", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          identifier: username,
+          password: password,
+        }),
+      });
 
       if (!response.ok) {
         throw new Error("Login failed");
