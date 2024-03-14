@@ -93,6 +93,10 @@ fetch(apiUrl)
   .then((data) => {
     data.data.forEach((link) => {
       const linkName = link.attributes.link_name;
+      if (linkName === null) {
+        // Skip appending if linkName is null
+        return;
+      }
       const linkTex = link.attributes.link_text;
       const linkStatus = link.attributes.link_on;
       const linkId = link.id;
