@@ -46,7 +46,11 @@ axios
       console.log("Medium Image URL:", imageUrl);
 
       const imageElement = document.getElementById("profileImg");
-      if (imageElement && imageUrl) imageElement.src = imageUrl;
+      if (imageElement && imageUrl) {
+        const fullUrl = `https://tapseed.cloud${imageUrl}`;
+        imageElement.src = fullUrl;
+      }
+
       const coverElement = document.getElementById("coverImg");
       if (coverElement && coverUrl) coverElement.src = coverUrl;
     } else {
@@ -89,6 +93,10 @@ fetch(apiUrl)
   .then((data) => {
     data.data.forEach((link) => {
       const linkName = link.attributes.link_name;
+      if (linkName === null) {
+        // Skip appending if linkName is null
+        return;
+      }
       const linkTex = link.attributes.link_text;
       const linkStatus = link.attributes.link_on;
       const linkId = link.id;
