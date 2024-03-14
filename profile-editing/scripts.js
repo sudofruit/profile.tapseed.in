@@ -31,11 +31,11 @@ async function fetchImageDataByUsernameAndUpdate(username) {
     const profileUrl =
       "https://tapseed.cloud" +
       (imageData.attributes.profile?.data?.attributes?.formats?.medium?.url ||
-        null);
+        "/uploads/profile_photo_2877226d51.png"); // Set default profile image URL
     const coverPhotoUrl =
       "https://tapseed.cloud" +
       (imageData.attributes.cover_photo?.data?.attributes?.formats?.medium
-        ?.url || null);
+        ?.url || "/uploads/6938839_3409297_5965f10c59.jpg");
 
     userIds = imageData.id; // Assign value to userIds
 
